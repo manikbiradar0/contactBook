@@ -1,0 +1,36 @@
+<div class="card mb-3" *ngIf="contactDetails != undefined; else isNull">
+    <div class="card-body">
+        <div class="d-flex align-items-center justify-content-between my-2">
+            <h5 class="card-title mb-0">{{ contactDetails?.fname }} {{ contactDetails?.lname }}</h5>
+
+            <div class="d-grid my-2">
+                <button type="button" class="btn btn-primary btn-sm mr-2" (click)="editContact()">Edit</button>
+                <button type="button" class="btn btn-danger btn-sm"(click)="deleteContact(contactDetails?.fname)">Delete</button>
+            </div>
+
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-sm"  type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appDropdown #r="appDropDown">
+                    Action
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" [ngClass]="{ 'show': r.isOpen }">
+                    <a class="dropdown-item" role="button" (click)="editContact()">Edit Contact</a>
+                    <a class="dropdown-item" role="button" (click)="deleteContact()">Delete Contact</a>
+                </div>
+            </div> -->
+        </div>
+        <hr>
+        <p class="card-text" [ngClass]="contactDetails?.status ? 'text-success' : 'text-danger'">{{ contactDetails?.status ? "Status is Active" : "Status is Inactive" }}</p>
+        <hr>
+        <p>{{ contactDetails?.phone }}</p>
+        <hr>
+        <p>{{ contactDetails?.email }}</p>
+        <hr>
+        <p class="card-text"><small class="text-muted">Last updated 2hr ago</small></p>
+    </div>
+</div>
+<ng-template #isNull>
+    <div class="d-flex justify-content-center align-items-center card cardBox">
+        <p class="m-0">Select the Contact!</p>
+    </div>
+</ng-template>

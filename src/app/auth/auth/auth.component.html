@@ -1,0 +1,40 @@
+<app-loading *ngIf="isLoading"></app-loading>
+<div class="col-md-6 offset-md-3">
+    <form [formGroup]="loginForm" (ngSubmit)="submitLogin()" *ngIf="!isLoading">         
+        <h3 class="text-center">{{ isLoginMode ? 'Login' : 'Register' }} to Evolent Health</h3>
+        <div class="form-group mt-5">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" formControlName="email" name="email" autocomplete="off"
+                [ngClass]="isEmailInvalid ? 'is-invalid' : 'is-valid'">
+            <div *ngIf="isEmailInvalid" class="invalid-feedback">
+                <div *ngIf="email.errors?.required">Email is required.</div>
+                <div *ngIf="email.errors?.email">Email is invalid.</div>
+                <div *ngIf="emailInvalidText">
+                    {{ emailInvalidText }}
+                </div>
+            </div>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                formControlName="password" name="password" autocomplete="off"
+                [ngClass]="isPassInvalid ? 'is-invalid' : 'is-valid'">
+            <div *ngIf="isPassInvalid" class="invalid-feedback">
+                <div *ngIf="password.errors?.required">Password is required.</div>
+                <div *ngIf="password.errors?.minlength">
+                    Password must be at least 6 characters long.
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mr-2">Submit</button>
+            <button type="button" class="btn btn-primary" (click)="switchMode()">Switch to {{ isLoginMode ? 'Register' :
+                'Login' }}</button>
+        </div>
+        <small id="emailHelp" class="form-text text-muted">Default Credentials : manikbiradar365@gmail.com : Admin@123</small>
+    </form>
+    
+    <div class="alert alert-danger mt-3" role="alert" *ngIf="isError">{{ isError}}</div>
+</div>
