@@ -40,19 +40,19 @@ Once the app is running you can play around with editing and managing contacts a
 Here are a few screenshots from the app:<br />
 
 ## Screenshots for Web App
-![localhost_4200_login(1366)](https://user-images.githubusercontent.com/64681145/123249923-1f353480-d507-11eb-8d06-c402d69f410a.png)<br />
-![localhost_4200_login(1366) (1)](https://user-images.githubusercontent.com/64681145/123249928-20666180-d507-11eb-9624-86e3b2c00237.png)<br />
-![localhost_4200_login(1366) (2)](https://user-images.githubusercontent.com/64681145/123249930-20666180-d507-11eb-9841-0d62f618eceb.png)<br />
-![localhost_4200_login(1366) (3)](https://user-images.githubusercontent.com/64681145/123249932-20fef800-d507-11eb-947d-e7135fa6e2ee.png)<br />
-![localhost_4200_login(1366) (4)](https://user-images.githubusercontent.com/64681145/123249933-21978e80-d507-11eb-86e1-1f11444799a7.png)<br />
-![localhost_4200_login(1366) (5)](https://user-images.githubusercontent.com/64681145/123249934-21978e80-d507-11eb-913e-e5ca715ad48e.png)
+![localhost_4200_login(1366)](https://user-images.githubusercontent.com/64681145/123249923-1f353480-d507-11eb-8d06-c402d69f410a.png)<br /><br />
+![localhost_4200_login(1366) (1)](https://user-images.githubusercontent.com/64681145/123249928-20666180-d507-11eb-9624-86e3b2c00237.png)<br /><br />
+![localhost_4200_login(1366) (2)](https://user-images.githubusercontent.com/64681145/123249930-20666180-d507-11eb-9841-0d62f618eceb.png)<br /><br />
+![localhost_4200_login(1366) (3)](https://user-images.githubusercontent.com/64681145/123249932-20fef800-d507-11eb-947d-e7135fa6e2ee.png)<br /><br />
+![localhost_4200_login(1366) (4)](https://user-images.githubusercontent.com/64681145/123249933-21978e80-d507-11eb-86e1-1f11444799a7.png)<br /><br />
+![localhost_4200_login(1366) (5)](https://user-images.githubusercontent.com/64681145/123249934-21978e80-d507-11eb-913e-e5ca715ad48e.png)<br />
 
 
 
 
 ## Screenshots for Mobile App
 
-![mobile](https://user-images.githubusercontent.com/64681145/123252210-a8e60180-d509-11eb-9da0-7b62f3b810b1.jpg)
+![mobile](https://user-images.githubusercontent.com/64681145/123252210-a8e60180-d509-11eb-9da0-7b62f3b810b1.jpg)<br />
 
 
 
