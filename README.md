@@ -19,9 +19,20 @@ The goal of this Contact Book app is to provide a simple way to maintain contact
 * Optional: Webpack functionality is available for module loading and more
 * Optional: Ahead-of-Time (AOT) functionality is available for a production build of the project
 
-## Running the Application with Node.js
 
-1. Install the latest LTS version of Node.js from https://nodejs.org. *IMPORTANT: The server uses ES2015 features AND the Angular CLI so you need a current version of Node.js.*
+## Development Setup
+
+### Prerequisites
+
+- Install [Node.js] which includes [Node Package Manager][npm]
+
+### Setting Up a Project
+
+Install the Angular CLI globally:
+
+```
+npm install -g @angular/cli
+```
 
 1. Run `npm install` to install app dependencies
 
