@@ -1,0 +1,18 @@
+<input type="text" class="form-control mb-3" placeholder="Search" [(ngModel)]="query" id="listSearch" *ngIf="contacts.length">
+<div class="card mb-3 w-100" role="button" [routerLink]="[index]" routerLinkActive="border-success"
+    [class.border-succes]="index == selectedContact" (click)="contactSelected(contact, index)"
+    *ngFor="let contact of contacts | SearchPipe: query; let index = index">
+
+
+    <div class="row no-gutters">
+        <div class="col-2 d-flex align-items-center justify-content-center">
+            <p class="titleAvtar">{{contact?.fname | slice:0:1 | uppercase}}{{ contact?.lname | slice:0:1 | uppercase }}</p>
+        </div>
+        <div class="card-body col-10" [class.active]="!contact?.status">
+            <h5 class="card-title text-truncate">{{ contact?.fname }} {{ contact?.lname }}</h5>
+            <p class="card-text">{{ contact?.phone }} - {{ contact?.email }}</p>
+        </div>
+    </div>
+</div>
+
+<p *ngIf="!contacts.length">Can't find or sync contacts!</p>

@@ -1,0 +1,56 @@
+.card-img{
+    object-fit: none;
+    height: 100%;
+}
+.card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body {
+    padding: 5px 1.25rem;
+    border-right: 10px solid #4caf50;
+    border-radius: .25em;
+}
+.card-body.active {
+    border-color: #f44336;
+}
+p.titleAvtar {
+    padding: 2px;
+    background: blue;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    margin: 0;
+}
+.card:nth-child(6n+1) p.titleAvtar {
+    background: #ff5177;
+}
+
+.card:nth-child(6n+2) p.titleAvtar {
+    background: #ff4081;
+}
+
+.card:nth-child(6n+3) p.titleAvtar {
+    background: #e040fb;
+}
+
+.card:nth-child(6n+4) p.titleAvtar {
+    background: #7c4dff;
+}
+
+.card:nth-child(6n+5) p.titleAvtar {
+    background: #536dfe;
+}
+
+
+.card:nth-child(6n+6) p.titleAvtar {
+    background: #6889ff;
+}

@@ -1,0 +1,42 @@
+<nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg navbar-expand-md">
+    <a class="navbar-brand" role="button">Evolent Health</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" (click)="showToggle = !showToggle">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [class.show]="showToggle" (click)="showToggle = !showToggle">
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item" *ngIf="!isLogged">
+                <a class="nav-link" [routerLink]="['login']" routerLinkActive="active">login</a>
+            </li>
+            <li class="nav-item" *ngIf="isLogged">
+                <a class="nav-link" [routerLink]="['contact']" routerLinkActive="active">Contact Book</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex align-items-center">
+                <li class="nav-item" *ngIf="isLogged">
+                    <a class="nav-link active py-0" (click)="logout()" role="button">Logout</a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="isLogged">
+                    <a class="nav-link py-0">
+                        <div class="dropdown" *ngIf="isLogged">
+                            <button class="btn btn-secondary dropdown-toggle btn-sm" appDropdown #r="appDropDown" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Database
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                [ngClass]="{ 'show': r.isOpen }">
+                                <a class="dropdown-item" role="button" (click)="saveData()">Save</a>
+                                <a class="dropdown-item" role="button" (click)="fetchData()">Fetch</a>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+
+        </form>
+    </div>
+</nav>
