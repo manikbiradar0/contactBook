@@ -34,17 +34,14 @@ Install the Angular CLI globally:
 npm install -g @angular/cli
 ```
 
-1. Run `npm install` to install app dependencies
-
-1. Run `ng build --prod` to build and bundle the code
-
-1. Run `ng build --prod --aot` to build and AOT bundle
-
+Simply clone the project or download and extract the .zip to get started. 
+1. Go to Project directory `cd [PROJECT NAME]`
 1. Run `ng serve --open` to run app on local environment 
-
+1. Run `npm install` to install app dependencies
+1. Run `ng build --prod` to build and bundle the code
+1. Run `ng build --prod --aot` to build and AOT bundle
 1. Go to http://localhost:4200 in your browser 
 
-Simply clone the project or download and extract the .zip to get started. 
 
 Once the app is running you can play around with editing and managing contacts after you login. Use **manikbiradar365@gmail.com** email address and **Admin@123** password.
 
@@ -65,7 +62,8 @@ Here are a few screenshots from the app:<br />
 
 ![mobile](https://user-images.githubusercontent.com/64681145/123252210-a8e60180-d509-11eb-9da0-7b62f3b810b1.jpg)<br />
 
-
+[node.js]: https://nodejs.org/
+[npm]: https://www.npmjs.com/get-npm
 
 
 
