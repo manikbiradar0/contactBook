@@ -1,6 +1,7 @@
 # Angular Contact Book with TypeScript
 
-The goal of this Contact Book app is to provide a simple way to maintain contact information. The sample relies on the Angular CLI to build the application.
+The goal of this Contact Book app is to provide a simple way to maintain contact information. It allows us to browse through a list of the contacts, give the ability to add and edit selected contact. We can also delete or mark a contact as active or inactive. The sample relies on Angular CLI to build the application.
+
 ### [Demo URL (Firebase App)]
 
 
@@ -38,7 +39,7 @@ npm install -g @angular/cli
 
 Simply clone the project or download and extract the .zip to get started. 
 1. Go to Project directory `cd [PROJECT NAME]`
-1. Run `ng serve --open` to run app on local environment 
+1. Run `ng serve --open` to run app on the local environment 
 1. Run `npm install` to install app dependencies
 1. Run `ng build --prod` to build and bundle the code
 1. Run `ng build --prod --aot` to build and AOT bundle
